@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Products Form</h2>
+
+        <div class="inputs">
+
+            <input 
+                type="text" 
+                id="name"
+                placeholder="Input Text"
+            >
+
+            <input 
+                type="text" 
+                id="description"
+                placeholder="Description"
+            >
+
+            <select id="color">
+
+                <option value="">Select Color</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+
+            </select>
+
+
+            <label class="checkbox">
+
+                <input 
+                    type="checkbox" 
+                    id="outOfStock"
+                >
+
+
+            </label>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button id="addButton" onclick="addProduct()">
+                Add
+            </button>
+
+            <button id="updateButton" onclick="updateProduct()">
+                Update
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="search-container">
+
+        <input 
+            type="text"
+            id="search"
+            placeholder="Search by name, description, color or stock..."
+            onkeyup="searchProducts()"
+        >
+
+    </div>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+
+                <th>Description</th>
+
+                <th>Color</th>
+
+                <th>Out Of Stock</th>
+
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
