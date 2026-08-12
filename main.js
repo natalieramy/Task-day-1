@@ -341,14 +341,6 @@ if (n < 0) {
   var resultMessage = `${n}! = ${factorial}`;
   alert(resultMessage);
   console.log(resultMessage);
-}                            ////////////////////////<!DOCTYPE html>
-<html>
-<head>
-    <title>Task 2</title>
-</head>
-<body>
 
-    <script src="task2.js"></script>
+}
 
-</body>
-</html>

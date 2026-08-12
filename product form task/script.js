@@ -17,7 +17,6 @@ displayProducts();
 
 function addProduct() {
 
-    // Get values from HTML
 
     var name = document.getElementById("name").value;
 
